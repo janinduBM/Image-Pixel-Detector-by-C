@@ -34,16 +34,16 @@ int main(){
                             rt=image[j];
                             gt=image[j+1];
                             bt=image[j+2];
-                            rb=image[j+3];
-                            gb=image[j+4];
-                            bb=image[j+5];
-                            j=j+6;
+                            rb=image[j+width*3];
+                            gb=image[j+width*3+1];
+                            bb=image[j+width*3+2];
+                            j=j+3;
                             pixel(rt,gt,bt,rb,gb,bb);
 
 
             }
             printf("\n");
-             i++;
+             i=i+2;
 
 
     }
