@@ -56,7 +56,7 @@ void pixel(int topR, int topG, int topB, int bottomR, int bottomG, int bottomB)
 {
     printf("\x1b[38;2;%d;%d;%dm", topR, topG, topB);       // foreground (top)
     printf("\x1b[48;2;%d;%d;%dm", bottomR, bottomG, bottomB); // background (bottom)
-    printf("▀");
+    printf("*");
     printf("\x1b[0m"); // reset color
 }
 
